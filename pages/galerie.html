@@ -5,27 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Galerie — Warhammer 40,000</title>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+        <link rel="icon" href="../imag/images.ico" type="image/x-icon">
     </head>
     <body id="top" class="bg-slate-950 text-stone-100">
         <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
-            <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8"> 
-                <a href="../accueil.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base">Warhammer <span class="text-white">40,000</span></a>
+            
+            <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-4 sm:px-8">
+                <a href="../accueil.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base px-3 py-2">Warhammer <span class="text-white">40,000</span></a>
                 
-                <div class="flex-col">
-                    <input type="checkbox" id="menu" class="peer hidden">
-                    <label for="menu" class="block cursor-pointer text-right text-3xl text-white md:hidden">
-                        ☰
-                    </label>
+                <nav> 
+                    <div class="flex-col">
+                        <input type="checkbox" id="menu" class="peer hidden">
+                        <label for="menu" class="block cursor-pointer text-right text-3xl text-white md:hidden">
+                            ☰
+                        </label>
 
-                    <div class=" hidden flex-col peer-checked:flex md:flex md:flex-row md:justify-end gap-1 text-sm font-medium text-stone-300 sm:gap-2">
-                        <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../accueil.html">Accueil</a>
-                        <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/histoire.html">Histoire</a>
-                        <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/personnages.html">Personnages / Factions</a>
-                        <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/galerie.html">Galerie</a>
-                    <button type="button" commandfor="a-propos" command="show-modal" class="ml-1 rounded-lg border border-amber-400/40 px-3 py-2 text-amber-300 transition hover:bg-amber-400 hover:text-slate-950">À propos</button>
+                        <div class=" hidden flex-col peer-checked:flex md:flex md:flex-row md:justify-end gap-1 text-sm font-medium text-stone-300 sm:gap-2">
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../accueil.html">Accueil</a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/histoire.html">Histoire</a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/personnages.html">Personnages / Factions</a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/galerie.html">Galerie</a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/ressoursces.html">Ressources</a>
+                        <button type="button" commandfor="a-propos" command="show-modal" class="ml-1 rounded-lg border border-amber-400/40 px-3 py-2 text-amber-300 transition hover:bg-amber-400 hover:text-slate-950">À propos</button>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
         
         <dialog id="a-propos" aria-labelledby="titre-a-propos" class="m-auto w-11/12 max-w-2xl rounded-2xl border border-white/10 bg-slate-900 p-0 text-stone-100 shadow-2xl backdrop:bg-black/75">
@@ -59,14 +65,47 @@
             <h1 class="text-4xl font-black">Galerie</h1>
             
             <section class="grid grid-flow-col md:grid-cols-3 md:grid-rows-2 grid-cols-2 grid-rows-3 gap-10 py-14 md:py-20">
-                <img class="border-5 border-amber-400" src="../imag/mani.jpg" alt="">
-                <img class="border-5 border-amber-400" src="../imag/40k-11th-edition-box-header.webp" alt="">
-                <div class="cols-span-2 mt-10">
-                    <img class="border-5 border-amber-400 mb-10" src="../imag/fall-of-cadia.avif" alt="">
-                    <img class="border-5 border-amber-400" src="../imag/Horus-heresy.webp" alt="">
-                </div>
-                <img class="border-5 border-amber-400" src="../imag/Emperor_golden_throne.jpg" alt="">
-                <img class="border-5 border-amber-400" src="../imag/war-in-heaven.webp" alt="">
+                <figure>
+                    <img src="../imag/40k-11th-edition-box-header.webp" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../imag/Emperor_golden_throne.jpg" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../imag/fall-of-cadia.avif" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../imag/Horus-heresy.webp" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../imag/images.ico" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="../imag/war-in-heaven.webp" alt="">
+                    <figcaption>
+                        <a href="">Source : Nom de l'image</a>
+                    </figcaption>
+                </figure>
             </section>
 
         </main>
