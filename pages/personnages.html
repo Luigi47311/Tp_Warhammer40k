@@ -9,12 +9,12 @@
     <body id="top" class="bg-slate-950 text-stone-100">
         <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
             <nav class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 sm:px-8">
-                <a href="index.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base">Warhammer <span class="text-white">40,000</span></a>
+                <a href="../index.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base">Warhammer <span class="text-white">40,000</span></a>
                 <div class="flex flex-wrap items-center justify-center gap-1 text-sm font-medium text-stone-300 sm:gap-2">
-                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="index.html">Accueil</a>
-                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="pages/histoire.html">Histoire</a>
-                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="pages/personnages.html">Personnages / Factions</a>
-                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="pages/galerie.html">Galerie</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../index.html">Accueil</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/histoire.html">Histoire</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/personnages.html">Personnages / Factions</a>
+                    <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/galerie.html">Galerie</a>
                     <button type="button" commandfor="a-propos" command="show-modal" class="ml-1 rounded-lg border border-amber-400/40 px-3 py-2 text-amber-300 transition hover:bg-amber-400 hover:text-slate-950">À propos</button>
                 </div>
             </nav>
@@ -23,16 +23,1120 @@
         <dialog id="a-propos" aria-labelledby="titre-a-propos" class="m-auto w-11/12 max-w-2xl rounded-2xl border border-white/10 bg-slate-900 p-0 text-stone-100 shadow-2xl backdrop:bg-black/75">
             <div class="p-6 sm:p-8">
                 <h2 id="titre-a-propos" class="text-3xl font-black">À propos</h2>
-                <p class="mt-3 leading-7 text-stone-300">Sit web sur l'univer de Warhammer 40k, 20 novembre 2026 au Cégep Saint-Jean-sur-Richelieu.</p>
+                <p class="mt-3 leading-7 text-stone-300">Sit web sur l'univer de Warhammer 40k le 20 novembre 2026 au Cégep Saint-Jean-sur-Richelieu.</p>
                 <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    <article class="rounded-lg border border-white/10 bg-slate-800 p-4"><div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">Portrait à ajouter</div><h3 class="text-lg font-bold">Manimékhala Nachampassak</h3><a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:adresse-a-ajouter@example.com">Écrire par courriel</a></article>
-                    <article class="rounded-lg border border-white/10 bg-slate-800 p-4"><div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">Portrait à ajouter</div><h3 class="text-lg font-bold">Tristan Pagé</h3><a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:adresse-a-ajouter@example.com">Écrire par courriel</a></article>
+                    <article class="rounded-lg border border-white/10 bg-slate-800 p-4">
+                        <div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">
+                            <img class="h-32 w-125 object-cover" src="../imag/mani.jpg" alt="Image de profile de Mani">
+                        </div>
+                        <h3 class="text-lg font-bold">Manimékhala Nachampassak</h3>
+                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2543018@cstjean.qc.ca">Écrire par courriel</a>
+                    </article>
+                    <article class="rounded-lg border border-white/10 bg-slate-800 p-4">
+                        <div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">
+                            <img class="h-32 w-125 object-cover" src="../imag/" alt="Image de profile de Tristan">
+                        </div>
+                        <h3 class="text-lg font-bold">Tristan Pagé</h3>
+                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2484895@cstjean.qc.ca">Écrire par courriel</a>
+                    </article>
                 </div>
-                <form method="dialog" class="mt-6 text-right"><button type="submit" class="rounded-lg bg-amber-400 px-5 py-2 font-bold text-slate-950 hover:bg-amber-300">Fermer</button></form>
+                <form method="dialog" class="mt-6 text-right">
+                    <button type="submit" class="rounded-lg bg-amber-400 px-5 py-2 font-bold text-slate-950 transition hover:bg-amber-300 focus:ring-2 focus:ring-amber-200">Fermer</button>
+                </form>
             </div>
         </dialog>
+        
         <main class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
             <h1 class="text-4xl font-black">Personnages et factions</h1>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                <div class="bg-blue-500 p-6 rounded rounded-3xl">
+                    <h2 class="text-[50px]">Factions</h2>
+                    <p class="text-[20px]">
+                        description
+                    </p>
+                </div>
+            </section>
+            
+            <section class="mt-14 md:mt-20">
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+                <article class="bg-blue-200 flex flex-row mb-10">
+                    
+                    <div class="w-160 p-20 text-black">
+                       <h2 class="text-[50px]">Nom</h2>
+                        <p class="text-[20px]">
+                            description
+                        </p>
+                        <div class="flex flex-row gap-5 mt-40 ml-67">           
+                            <div class="bg-blue-500 p-5">
+                                <h2 class="text-[50px]">Faction</h2>
+                                <p class="text-[20px]">
+                                    description
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
+                </article>
+                
+            </section>
+            
+            
+            
         </main>
+        
+        <footer class="border-t border-white/10 bg-slate-950 px-5 py-8 text-center text-sm text-stone-400">
+            <p>&copy;Warhammer 40,000, &copy;GAMES WORKSHOP. Créé par Manimékhala Nachampassak et Tristan Pagé</p>
+        </footer>
+        
+        <a class="fixed bottom-5 right-5 rounded-full border border-amber-300 bg-slate-900 px-4 py-3 text-sm font-bold text-amber-300 shadow-xl transition hover:bg-amber-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-amber-200" href="#top">↑ <span class="hidden sm:inline">Haut de page</span></a>
     </body>
 </html>
