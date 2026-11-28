@@ -3,1164 +3,1414 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Personnages et factions — Warhammer 40,000</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        
+        <title>
+            Personnages et factions — Warhammer 40,000
+        </title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+        </script>
         <link rel="icon" href="../imag/images.ico" type="image/x-icon">
     </head>
     <body id="top" class="bg-slate-950 text-stone-100">
         <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl">
-            
             <div class="mx-auto flex max-w-7xl flex-wrap justify-between gap-4 px-5 py-4 sm:px-8">
-                <a href="../accueil.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base px-3 py-2">Warhammer <span class="text-white">40,000</span></a>
-                
-                <nav> 
+                <a href="../accueil.html" class="text-sm font-black uppercase tracking-widest text-amber-400 sm:text-base px-3 py-2">
+                    Warhammer
+                    <span class="text-white">
+                        40,000
+                    </span>
+                </a>
+                <nav>
                     <div class="flex-col">
                         <input type="checkbox" id="menu" class="peer hidden">
                         <label for="menu" class="block cursor-pointer text-right text-3xl text-white md:hidden">
                             ☰
                         </label>
-
                         <div class=" hidden flex-col peer-checked:flex md:flex md:flex-row md:justify-end gap-1 text-sm font-medium text-stone-300 sm:gap-2">
-                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../accueil.html">Accueil</a>
-                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/histoire.html">Histoire</a>
-                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/personnages.html">Personnages / Factions</a>
-                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/galerie.html">Galerie</a>
-                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/ressoursces.html">Ressources</a>
-                            <button type="button" commandfor="a-propos" command="show-modal" class="ml-1 rounded-lg border border-amber-400/40 px-3 py-2 text-amber-300 transition hover:bg-amber-400 hover:text-slate-950">À propos</button>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../accueil.html">
+                                Accueil
+                            </a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/histoire.html">
+                                Histoire
+                            </a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/personnages.html">
+                                Personnages / Factions
+                            </a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/galerie.html">
+                                Galerie
+                            </a>
+                            <a class="rounded-lg px-3 py-2 transition hover:bg-white/10 hover:text-amber-300" href="../pages/ressoursces.html">
+                                Ressources
+                            </a>
+                            <button type="button" commandfor="a-propos" command="show-modal" class="ml-1 rounded-lg border border-amber-400/40 px-3 py-2 text-amber-300 transition hover:bg-amber-400 hover:text-slate-950">
+                                À propos
+                            </button>
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
-        
         <dialog id="a-propos" aria-labelledby="titre-a-propos" class="m-auto w-11/12 max-w-2xl rounded-2xl border border-white/10 bg-slate-900 p-0 text-stone-100 shadow-2xl backdrop:bg-black/75">
             <div class="p-6 sm:p-8">
-                <h2 id="titre-a-propos" class="text-3xl font-black">À propos</h2>
-                <p class="mt-3 leading-7 text-stone-300">Sit web sur l'univer de Warhammer 40k le 20 novembre 2026 au Cégep Saint-Jean-sur-Richelieu.</p>
+                <h2 id="titre-a-propos" class="text-3xl font-black">
+                    À propos
+                </h2>
+                <p class="mt-3 leading-7 text-stone-300">
+                    Sit web sur l'univer de Warhammer 40k le 20 novembre 2026 au Cégep Saint-Jean-sur-Richelieu.
+                </p>
                 <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                     <article class="rounded-lg border border-white/10 bg-slate-800 p-4">
                         <div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">
                             <img class="h-32 w-125 object-cover" src="../imag/mani.jpg" alt="Image de profile de Mani">
                         </div>
-                        <h3 class="text-lg font-bold">Manimékhala Nachampassak</h3>
-                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2543018@cstjean.qc.ca">Écrire par courriel</a>
+                        <h3 class="text-lg font-bold">
+                            Manimékhala Nachampassak
+                        </h3>
+                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2543018@cstjean.qc.ca">
+                            Écrire par courriel
+                        </a>
                     </article>
                     <article class="rounded-lg border border-white/10 bg-slate-800 p-4">
                         <div class="mb-4 flex h-32 items-center justify-center rounded-lg bg-slate-700 text-sm text-stone-300">
                             <img class="h-32 w-125 object-cover" src="../imag/" alt="Image de profile de Tristan">
                         </div>
-                        <h3 class="text-lg font-bold">Tristan Pagé</h3>
-                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2484895@cstjean.qc.ca">Écrire par courriel</a>
+                        <h3 class="text-lg font-bold">
+                            Tristan Pagé
+                        </h3>
+                        <a class="mt-2 inline-block text-amber-300 underline hover:text-amber-200" href="mailto:2484895@cstjean.qc.ca">
+                            Écrire par courriel
+                        </a>
                     </article>
                 </div>
                 <form method="dialog" class="mt-6 text-right">
-                    <button type="submit" class="rounded-lg bg-amber-400 px-5 py-2 font-bold text-slate-950 transition hover:bg-amber-300 focus:ring-2 focus:ring-amber-200">Fermer</button>
+                    <button type="submit" class="rounded-lg bg-amber-400 px-5 py-2 font-bold text-slate-950 transition hover:bg-amber-300 focus:ring-2 focus:ring-amber-200">
+                        Fermer
+                    </button>
                 </form>
             </div>
         </dialog>
-        
         <main class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
-            <h1 class="text-4xl font-black">Personnages et factions</h1>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-yellow-500 p-6 rounded rounded-3xl pb-80">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
+            <section class="mb-12">
+                <p class="text-sm font-bold uppercase tracking-widest text-amber-400">
+                    Les grandes puissances de la galaxie
+                </p>
+                <h1 class="mt-3 text-4xl font-black sm:text-5xl">
+                    Personnages et factions
+                </h1>
+                <p class="mt-5 max-w-3xl text-lg leading-8 text-stone-300">
+                    Au 41e millénaire, les armées de l’Imperium, les serviteurs du Chaos et les peuples xenos se disputent la galaxie. Les factions sont présentées en premier, suivies de fiches illustrées sur quelques personnages importants.
+                </p>
+            </section>
+            <section class="mb-16 rounded-2xl border border-amber-400/30 bg-slate-900 p-6 sm:p-8">
+                <h2 class="text-3xl font-black text-amber-300 sm:text-4xl">
+                    Imperium
+                </h2>
+                <p class="mt-3 max-w-3xl leading-7 text-stone-300">
+                    L’Imperium est un immense régime humain gouverné au nom de l’Empereur. Ses armées rassemblent des soldats ordinaires, des guerriers augmentés et des prêtres de la machine.
+                </p>
+                <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Astra Militarum
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les régiments de la Garde impériale forment le cœur des forces terrestres de l’Imperium. Ils défendent les mondes humains grâce à leur discipline, leur nombre et leurs véhicules de guerre.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Adeptus Mechanicus
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les prêtres de Mars vénèrent le Dieu-Machine. Ils entretiennent les technologies de l’Imperium et envoient au combat des Skitarii, des serviteurs augmentés et des machines de guerre.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Space Marines
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Ces guerriers génétiquement améliorés combattent dans des chapitres indépendants, chacun doté de ses propres traditions et tactiques.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Adepta Sororitas
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Sœurs de Bataille sont les guerrières de l’Ecclésiarchie. Elles protègent la foi impériale et combattent au nom de l’Empereur.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5 md:col-span-2">
+                        <h3 class="text-2xl font-bold">
+                            Adeptus Custodes
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Custodes sont les gardes personnels de l’Empereur : une force d’élite composée de guerriers soigneusement façonnés et équipés.
+                        </p>
+                    </article>
                 </div>
             </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Imperium</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
+            <section class="mb-16 rounded-2xl border border-red-400/30 bg-slate-900 p-6 sm:p-8">
+                <h2 class="text-3xl font-black text-red-300 sm:text-4xl">
+                    Chaos
+                </h2>
+                <p class="mt-3 max-w-3xl leading-7 text-stone-300">
+                    Les puissances du Chaos viennent du Warp. Leurs armées comprennent des Space Marines renégats, des humains corrompus et des démons liés aux dieux du Chaos.
+                </p>
+                <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Space Marines du Chaos
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            D’anciens Space Marines ont trahi l’Imperium pendant l’Hérésie d’Horus. Leurs légions poursuivent la guerre contre l’Empereur et ses armées.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Death Guard
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Cette légion endurcie répand les maladies et sert Nurgle, le dieu du Chaos associé à la peste et à la décomposition.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Thousand Sons
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Cette légion de sorciers et de guerriers en armure sert Tzeentch, le dieu du changement et de la magie.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            World Eaters
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les World Eaters sont des guerriers voués à Khorne, le dieu du sang et de la guerre. Ils cherchent le combat rapproché et le carnage.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Démons du Chaos
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les démons sont des créatures du Warp qui servent les dieux du Chaos et apparaissent dans l’espace réel.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Emperor’s Children
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Cette légion renégate recherche les sensations extrêmes et sert Slaanesh, le dieu du Chaos associé à l’excès.
+                        </p>
+                    </article>
                 </div>
             </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Empreur de l'humanité</h2>
-                        <p class="text-[20px]">
-                            description
+            <section class="mb-16 rounded-2xl border border-emerald-400/30 bg-slate-900 p-6 sm:p-8">
+                <h2 class="text-3xl font-black text-emerald-300 sm:text-4xl">
+                    Factions xenos
+                </h2>
+                <p class="mt-3 max-w-3xl leading-7 text-stone-300">
+                    Les xenos sont les peuples extraterrestres de la galaxie. Leurs civilisations et leurs objectifs sont très différents, et elles s’opposent aussi bien à l’Imperium qu’aux forces du Chaos.
+                </p>
+                <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Orks
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Orks sont des combattants brutaux qui se rassemblent en grandes hordes appelées Waaagh! pour trouver de nouvelles batailles.
                         </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Rouboute Guilliman</h2>
-                        <p class="text-[20px]">
-                            description
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Nécrons
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Nécrons sont une ancienne civilisation qui s’est enfermée dans des corps métalliques et se réveille après des millions d’années.
                         </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Marnus Calgar</h2>
-                        <p class="text-[20px]">
-                            description
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Aeldari
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Aeldari sont les survivants d’une civilisation ancienne. Leurs vaisseaux-mondes abritent des peuples qui cherchent à éviter l’extinction.
                         </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Comissar Sebatian Yarrik</h2>
-                        <p class="text-[20px]">
-                            description
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Drukhari
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Drukhari lancent des raids depuis Commorragh, leur cité dans la Toile, afin de capturer des prisonniers et des ressources.
                         </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Morvin Valve</h2>
-                        <p class="text-[20px]">
-                            description
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Empire T’au
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            L’Empire T’au s’étend grâce à sa technologie avancée et à l’idéal du Bien Suprême.
                         </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Orks</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Tyranides
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Tyranides sont des organismes extraterrestres organisés par l’Esprit-ruche. Leurs flottes dévorent la biomasse des mondes qu’elles envahissent.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Cultes Genestealers
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Ces cultes infiltrent les sociétés humaines et préparent l’arrivée des flottes tyranides.
+                        </p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-slate-800 p-5">
+                        <h3 class="text-2xl font-bold">
+                            Ligues de Votann
+                        </h3>
+                        <p class="mt-3 leading-7 text-stone-300">
+                            Les Ligues de Votann rassemblent des communautés de Kin, des humanoïdes robustes qui exploitent les régions riches en ressources de la galaxie.
+                        </p>
+                    </article>
                 </div>
             </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Ghazghkull Mag Uruk Thraka</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
+            <section class="mb-16">
+                <p class="text-sm font-bold uppercase tracking-widest text-amber-400">
+                    Pour se repérer dans la galaxie
+                </p>
+                <h2 class="mt-3 text-3xl font-black sm:text-4xl">
+                    Personnages importants
+                </h2>
+                <p class="mt-4 max-w-3xl leading-7 text-stone-300">
+                    Voici quelques figures qui ont marqué les grands conflits du 41e millénaire.
+                </p>
+                <div class="mt-8 space-y-12">
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">⚜</span>Imperium
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    L’Empereur de l’humanité
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Markir le Lucky grot</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/Emperor_golden_throne.jpg" alt="L’Empereur assis sur le Trône d’Or" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Fondateur de l’Imperium, l’Empereur a uni l’humanité avant l’Hérésie d’Horus. Gravement blessé pendant cette guerre, il demeure sur le Trône d’Or, où il protège l’Imperium et guide les navigateurs à travers le Warp. Sa présence sur le Trône d’Or maintient l’Astronomican, repère psychique indispensable aux voyages de l’Imperium.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Roboute Guilliman
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Space Marines
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Zodgrod Wortsnagga, et la Bête</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/roboute-guilliman.jpg" alt="Roboute Guilliman, primarque des Ultramarines" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Primarque des Ultramarines, Guilliman est revenu après des millénaires d’absence. Il dirige aujourd’hui une grande partie des forces impériales et tente de maintenir l’Imperium uni. Il s’appuie sur le Codex Astartes et sur les forces de l’Indomitus Crusade pour rétablir des communications entre les mondes impériaux.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/o8hfXHxy/40-years-of-warhammer-the-first-loyalist-primarch-in-warhammer-40000/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Commissaire Sebastian Yarrick
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Astra Militarum
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nazdreg Ug Urdgrub, Boss Snikrot</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/yarrick.jpg" alt="Le commissaire Sebastian Yarrick" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Héros de la ruche Hades, Yarrick est un commissaire légendaire de l’Astra Militarum. Son courage et son sens tactique inspirent les soldats pendant les guerres d’Armageddon. Sa rivalité avec Ghazghkull a marqué les guerres d’Armageddon et fait de lui un symbole de résistance pour les soldats impériaux.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/sklouxc3/new-animation-the-saviour-of-armageddon-returns/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Ursula Creed
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Astra Militarum
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/ursula-creed.jpg" alt="Ursula Creed, commandante de Cadia" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Lord Castellan de Cadia, Ursula Creed a repris le rôle de commandement autrefois occupé par son père. Elle dirige les forces cadiennes et défend les mondes impériaux avec détermination. Son sceptre de fonction et ses pistolets reliques rappellent à la fois son rang et son héritage militaire.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://stonemonkey.com.au/products/astra-militarum-lord-castellan-ursula-creed">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Lord Solar Leontus
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Astra Militarum
                                 </p>
-                            </div>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/lord-solar-leontus.webp" alt="Lord Solar Leontus monté sur son destrier Konstantin" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Lord Solar Leontus est le commandant suprême des armées de l’Astra Militarum. Il parcourt les zones de guerre sur son destrier cybernétique Konstantin et coordonne des forces issues de nombreux régiments. Sa maîtrise de la stratégie lui permet de diriger des campagnes à l’échelle de systèmes entiers.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://tabletoprenaissance.ca/products/warhammer-40000-lord-solar-leontus">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Commissaire-colonel Ibram Gaunt
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Astra Militarum, Fantômes de Gaunt
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/ibram-gaunt.jpg" alt="Ibram Gaunt, commissaire-colonel des Fantômes de Tanith" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Ibram Gaunt commande le premier et unique régiment de Tanith, aussi connu sous le nom des Fantômes de Gaunt. Commissaire et chef de terrain, il protège ses soldats tout en les menant dans des opérations dangereuses. Son régiment est réputé pour sa discrétion, son camouflage et ses tactiques d’infiltration.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://wh40k.lexicanum.com/wiki/Ibram_Gaunt">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Colonel Iron Hand Straken
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Astra Militarum, Catachan
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/iron-hand-straken.webp" alt="Colonel Iron Hand Straken, vétéran de Catachan" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Colonel des troupes de Catachan, Iron Hand Straken est un vétéran endurci par les campagnes sur des mondes hostiles. Après avoir perdu un bras lors d’une attaque, il a reçu une prothèse bionique et a continué à combattre en première ligne. Il inspire ses soldats par son endurance et son tempérament agressif.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.marketminiature.com/warhammer-40k/174-astra-militarum-colonel-iron-hand-straken.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Belisarius Cawl
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Adeptus Mechanicus
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/belisarius-cawl.jpg" alt="Belisarius Cawl, archmagos de l’Adeptus Mechanicus" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Cawl est un archmagos de l’Adeptus Mechanicus, réputé pour ses recherches et ses innovations technologiques. Il a notamment contribué au retour de Roboute Guilliman et à la création des Space Marines Primaris. Ses projets mêlent savoir ancien et technologie expérimentale, ce qui lui vaut autant de reconnaissance que de méfiance au sein de l’Adeptus Mechanicus.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/zTG2gZUQ/5-of-the-galaxys-most-efficient-tech-priests-and-a-weird-monkey/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Marneus Calgar
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Space Marines
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/marneus-calgar.webp" alt="Marneus Calgar, maître de chapitre des Ultramarines" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Maître de chapitre des Ultramarines, Calgar est un stratège respecté qui mène ses guerriers au combat. Il a défendu Ultramar contre les Orks, les Nécrons et les Tyranides. À la tête de son chapitre, il applique les principes de Guilliman tout en adaptant ses stratégies aux menaces nouvelles qui frappent Ultramar.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/il71updr/marneus-augustus-calgar-chapter-master-of-the-ultramarines/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Sainte Célestine
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Adepta Sororitas
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/saint-celestine-new.jpg" alt="La figurine de Sainte Célestine, sainte vivante de l’Adepta Sororitas" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Sainte Célestine est une sainte vivante de l’Imperium. Elle combat aux côtés de l’Adepta Sororitas et inspire les Sœurs de Bataille par sa foi et ses apparitions miraculeuses. Elle réapparaît dans les périodes de crise et accompagne parfois les armées impériales, considérée comme un signe d’espoir par les croyants.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://wh40k.lexicanum.com/mediawiki/index.php?title=File:Celestine1.jpg">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Trajann Valoris
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Adeptus Custodes
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/trajann-valoris-character.jpg" alt="Figurine de Trajann Valoris, capitaine-général des Adeptus Custodes" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Capitaine-général des Adeptus Custodes, Trajann Valoris est leur chef et l’un de leurs combattants les plus redoutables. Il manie la hache Watcher’s Axe et le mécanisme temporel appelé Moment Shackle. Il dirige la garde rapprochée de l’Empereur et décide quand les Custodes doivent intervenir au-delà du palais impérial.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://wh40k.lexicanum.com/wiki/Trajann_Valoris">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Lion El’Jonson
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Dark Angels
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/lion-eljonson.jpg" alt="Lion El’Jonson, primarque des Dark Angels" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Primarque des Dark Angels, le Lion est revenu après dix mille ans d’absence. Ce chevalier solitaire traque les ennemis de l’humanité avec son épée Fealty et le bouclier de l’Empereur. Son retour dans une partie de l’Imperium coupée du reste de la galaxie lui donne un rôle essentiel dans la défense des mondes isolés.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/7su4GFZe/lion-eljonson-primarch-of-the-dark-angels-returns-to-warhammer-40000/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Commandant Dante
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Blood Angels
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/commander-dante.jpg" alt="Le commandant Dante des Blood Angels" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Maître de chapitre des Blood Angels et Régent de l’Imperium Nihilus, Dante est un vétéran qui a défendu le monde de Baal contre les Tyranides. Sa longue expérience et son sens du devoir en font un chef respecté, même si le poids de ses responsabilités le pousse souvent à poursuivre le combat sans repos.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/C2cEIu7v/commander-dante-is-back-and-burning-holes-in-heretics-with-his-new-datasheet/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Morvenn Vahl
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Adepta Sororitas
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/morvenn-vahl.jpg" alt="Morvenn Vahl en armure de combat" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Abbesse Sanctorum et dirigeante des Adepta Sororitas, Morvenn Vahl mène ses Sœurs de Bataille au cœur des combats dans son puissant exo-armure Parangon. Son autorité dépasse l’ordre des Sœurs de Bataille : elle siège parmi les dirigeants impériaux tout en privilégiant la présence sur le front.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/t4dLpUPb/this-high-lord-of-terra-prefers-the-battlefield-to-the-boardroom/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Azrael
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Dark Angels
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/azrael.jpg" alt="Azrael, maître suprême des Dark Angels" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Maître suprême des Dark Angels, Azrael dirige le chapitre depuis des siècles. Il porte le Heaume du Lion et l’Épée des Secrets au combat. Gardien des traditions et des secrets des Dark Angels, il coordonne les différentes ailes du chapitre face aux menaces qui pèsent sur ses frères.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/GTnSDxM9/azrael-revealed-unwrapping-a-chapter-master-cloaked-in-secrets/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Lieutenant Titus
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Imperium - Space Marines, Ultramarines
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/titus.jpg" alt="Lieutenant Titus, Space Marine des Ultramarines" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Demetrian Titus est un officier des Ultramarines et le héros de Space Marine 2. Résistant et expérimenté, il reprend le combat contre les Tyranides après avoir retrouvé sa place au sein du chapitre. Ses campagnes l’ont opposé aux Orks, aux hérétiques et aux Tyranides; il garde une réputation de combattant déterminé parmi les Ultramarines.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/iUmrPw1a/weta-workshop-unveil-lieutenant-titus/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
                         </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Necron</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">⛧</span>Chaos
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Abaddon le Fléau
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Black Legion
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/abaddon.jpg" alt="Abaddon le Fléau, maître de guerre du Chaos" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Maître de guerre du Chaos et chef de la Black Legion, Abaddon mène les croisades noires contre l’Imperium. Il cherche à achever la guerre commencée par Horus. Il rassemble des bandes rivales sous une même bannière et lance ses Croisades Noires depuis l’Œil de la Terreur.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/mEPTNv6E/abaddon-the-despoiler-is-back-in-business-with-a-fearsome-new-datasheet/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Mortarion
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Death Guard
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/mortarion.webp" alt="Mortarion, primarque démoniaque de la Death Guard" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Mortarion est le primarque démoniaque de la Death Guard. Au service de Nurgle, il mène sa légion et répand les maladies sur les mondes qu’elle envahit. Son armure et son corps sont imprégnés des maladies de Nurgle; sa présence transforme les champs de bataille en foyers de corruption.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/drhxkfhd/celebrate-warhammer-day-2025-with-new-action-figures-statues-video-game-reveals-and-promotions-and-more/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Magnus le Rouge
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Thousand Sons
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/magnus.jpg" alt="Magnus le Rouge, primarque des Thousand Sons" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Magnus le Rouge est le primarque des Thousand Sons et un puissant sorcier. Transformé en démon par Tzeentch, il conduit sa légion dans sa quête de savoir et de pouvoir. La destruction de Prospero et son pacte avec Tzeentch ont brisé son ancienne loyauté, sans éteindre sa quête de connaissances interdites.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/wxKAeUsS/magnus-the-red-leads-his-thousand-sons-champions-into-the-joytoy-figure-range/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Angron
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - World Eaters
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/angron.jpg" alt="Angron, primarque démoniaque des World Eaters" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Angron est le primarque démoniaque des World Eaters. Consacré à Khorne, il mène ses guerriers dans des assauts marqués par la rage et le combat rapproché. Capturé puis réduit en esclavage sur Nuceria, il porte les Clous du Boucher, implants qui alimentent une colère presque impossible à apaiser.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/gOE8IZkH/tremble-before-the-rage-of-angron-daemon-primarch-of-khorne/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Fulgrim
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Emperor Children
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/fulgrim.webp" alt="Fulgrim, primarque démoniaque des Emperor’s Children" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Fulgrim est le primarque des Emperor’s Children. Devenu un démon de Slaanesh, il mène sa légion dans une recherche sans fin de sensations, de perfection et d’excès. Sa quête de perfection l’a conduit à trahir l’Imperium; il pousse désormais les Emperor’s Children à rechercher toujours plus d’excès.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/7d4knyuv/kneel-before-the-immaculate-form-of-fulgrim-daemon-primarch-of-slaanesh/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Be’lakor
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Demons du Chaos
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/belakor.jpg" alt="Be’lakor, le Maître des Ténèbres" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Be’lakor est le Maître des Ténèbres, un démon ancien qui sert ses propres ambitions. Il rassemble des démons du Chaos et manipule les conflits à son avantage. Il convoite une puissance indépendante des dieux qui l’ont élevé et cherche à renverser ceux qui tentent de le contrôler.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/u4qgowmf/belakor-returns-to-the-41st-millennium-and-he-can-basically-chop-a-tank-in-half/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Khârn le Félon
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - World Eaters
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/kharn.jpg" alt="Illustration de la faction World Eaters liée à Khârn le Félon" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Khârn est l’un des guerriers les plus redoutés des World Eaters. Emporté par sa rage et dévoué à Khorne, il incarne la violence de sa légion. Au milieu de la mêlée, il ne distingue souvent plus ses adversaires de ses alliés, ce qui lui a valu son surnom redouté.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/xq3zpvdx/warhammer-art-through-the-years-world-eaters/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Ahriman
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Thousand Sons
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/ahriman.jpg" alt="Ahriman, sorcier des Thousand Sons" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Ahriman est le grand sorcier des Thousand Sons. Il cherche à annuler la malédiction qui a transformé les guerriers de sa légion en armures animées. Le rituel qui devait sauver les Thousand Sons a pétrifié la plupart de ses frères en armures; depuis, il cherche à défaire cette malédiction.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/wxKAeUsS/magnus-the-red-leads-his-thousand-sons-champions-into-the-joytoy-figure-range/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Khorne
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - World Eaters et démons de Khorne
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/khorne-greater-daemon.jpg" alt="Un démon majeur de Khorne, représentant sa puissance guerrière" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Khorne est le dieu du sang, de la guerre et des crânes. Ses démons majeurs, les Buveurs de Sang, incarnent sa colère et sa soif de combat. Ses fidèles méprisent la sorcellerie et glorifient la force, les combats directs et les trophées pris à leurs ennemis.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/iO3kttZv/40-years-of-warhammer-behold-the-brutal-brilliance-of-the-bloodthirster/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Tzeentch
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Thousand Sons et démons de Tzeentch
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/tzeentch-greater-daemon.jpg" alt="Un démon majeur de Tzeentch, le Seigneur du Changement" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Tzeentch est le dieu du changement, de la magie et des intrigues. Les Seigneurs du Changement sont ses démons majeurs, des sorciers ailés qui manipulent les événements. Ses desseins changent sans cesse, et ses serviteurs provoquent des mutations et des complots pour bouleverser l’ordre établi.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/tzzxr1jc/tzeentch-daemons-return-via-made-to-order/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Nurgle
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Death Guard et démons de Nurgle
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/nurgle-greater-daemon.jpg" alt="Un Grand Immonde, démon majeur représentant Nurgle" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Nurgle est le dieu de la maladie, de la décomposition et du renouveau. Ses Grands Immondes répandent les épidémies et commandent ses hordes démoniaques. Ses adeptes accueillent les maladies comme des dons et répandent leurs épidémies avec une joie dérangeante.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/EbTcW9xG/father-christmas-is-out-grandfather-nurgle-is-in-converting-and-painting-a-festive-great-unclean-one/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Slaanesh
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Emperor’s Children et démons de Slaanesh
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/slaanesh-daemons.jpg" alt="Des démons de Slaanesh, dont un démon majeur" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Slaanesh est le dieu de l’excès, des sensations et de l’obsession. Ses démons majeurs, les Gardiens des Secrets, séduisent et combattent avec une grâce redoutable. Ses cultes cherchent à repousser toutes les limites du plaisir, de la sensation et de la perfection, au prix de leur humanité.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/waiesi3a/summon-the-daemons-of-slaanesh-with-an-outstanding-new-emperors-children-detachment/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Vashtorr l’Arkifane
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Chaos - Dark Mechanicum
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/vashtorr.jpg" alt="Vashtorr l’Arkifane, entité démoniaque du Chaos" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Vashtorr est un puissant démon-artisan qui corrompt les machines et recherche des artefacts capables d’accroître son pouvoir. Il s’est allié à Abaddon pour mettre en œuvre ses plans. Maître des forges infernales, il négocie avec les mortels et les démons pour obtenir les artefacts nécessaires à ses inventions.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/eLDJMPE8/warhammer-online-preview-who-is-the-daemonic-entity-coming-to-shake-up-the-41st-millennium/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">☠</span>Orks
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Ghazghkull Mag Uruk Thraka
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Orks
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/ghazghkull-nouveau.jpg" alt="Ghazghkull Thraka en armure de méga-armure" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Ghazghkull est l’un des plus puissants chefs de guerre orks. Prophète de la Waaagh!, il rassemble des hordes immenses et entraîne les Orks dans des guerres à travers la galaxie. Ses visions annoncent une Waaagh! sans précédent; de nombreux Orks le suivent dans l’espoir de participer à la plus grande guerre de leur vie.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/194ewB4x/40-years-of-warhammer-ghazghkull-thraka-krumps-all-kompetition-with-his-kustom-gear/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Makari
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Orks
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/makari.jpg" alt="Makari brandit sa bannière ork" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Grot porte-bannière de Ghazghkull et prophète de Gork et Mork, Makari survit à des situations impossibles et accompagne le grand chef ork dans ses guerres. Les Orks racontent que la chance protège ce petit porte-bannière, qui est revenu auprès de Ghazghkull après de nombreuses morts supposées.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://bolterandchainsword.com/gallery/image/298209-makari-finished-3/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Grukk Face-rippa
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Orks
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/grukk.png" alt="Grukk Face-rippa, chef de guerre ork" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Chef de guerre ork brutal et ambitieux, Grukk a mené sa bande dans la guerre de Rynn et s’est taillé une réputation parmi les bandes des peaux-vertes. Ses conquêtes et ses affrontements avec les forces impériales ont renforcé sa réputation de chef violent capable de rallier de nombreux Boyz.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://mirminiatures.com/g-w/wr-40/xenos-armies/orks/grukk-face-rippa">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Ufthak Blackhawk
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Orks
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/ufthak.jpg" alt="Ufthak Blackhawk et son squig d’attaque" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Chef de guerre des Bad Moons, Ufthak Blackhawk est connu pour son marteau personnalisé et son goût des attaques spectaculaires. Son squig Princesse l’accompagne partout. Ses exploits sont racontés dans les romans Brutal Kunnin’ et Da Big Dakka, où sa ruse lui permet de survivre à des situations improbables.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/98q7j6qn/warhammer-preview-online-black-library-miniature-reveal-ufthak-blackhawk/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">◈</span>Necrons
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Szarekh, le Roi Silencieux
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Necrons
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/szarekh.webp" alt="Szarekh, le Roi Silencieux des Nécrons" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Szarekh est le Roi Silencieux et le souverain des Nécrons. Après des millions d’années d’exil, il est revenu pour réunir son peuple et reprendre le contrôle de la galaxie. Son retour vise à réunir les dynasties, à lutter contre les flottes-ruche tyranides et à rendre aux Necrons leur empire perdu.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/wE77ZMK0/designing-and-painting-the-silent-king/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Illuminor Szeras
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Necrons
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/szeras.jpg" alt="Illuminor Szeras, technomancien Necron" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Technomancien Necron obsédé par les secrets de la vie, Szeras conduit des expériences pour améliorer ses semblables et accroître sa maîtrise de la biotransférence. Il considère les formes de vie comme des sujets d’étude et cherche à libérer le potentiel énergétique caché dans les organismes vivants.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://agtom.eu/de/necrons/366906-necrons-illuminator-szeras-5011921136964.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Imotekh le Seigneur des Tempêtes
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Necrons, dynastie Sautekh
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/imotekh-stormlord.jpg" alt="Imotekh le Seigneur des Tempêtes, phaëron Necron" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Phaëron de la dynastie Sautekh, Imotekh est un stratège redoutable qui veut étendre son pouvoir sur les autres dynasties Necrons et reconquérir l’empire de son peuple. Il a pris le pouvoir au sein de la dynastie Sautekh et étend son influence par des campagnes méthodiques et des victoires soigneusement préparées.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/t1H8n1ps/warhammer-day-preview-imotekh-the-stormlord-unleashes-the-immortal-wrath-of-codex-necrons/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Trazyn l’Infini
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Necrons
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/trazyn.png" alt="Trazyn l’Infini, collectionneur Necron" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Seigneur Necron et collectionneur infatigable, Trazyn rassemble des artefacts et des spécimens historiques dans les galeries de Solemnace. Il n’hésite pas à intervenir pour enrichir sa collection. Ses galeries contiennent des reliques et des êtres prélevés dans différentes époques; il intervient parfois dans les conflits pour compléter cette collection.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://warhaus.com.au/products/necron-trazyn-the-infinite">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">✦</span>Aeldari et Ynnari
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Yvraine
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Ynnari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/yvraine.webp" alt="Yvraine, prophétesse des Ynnari, au milieu des combattants Aeldari" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Prophétesse des Ynnari, Yvraine rassemble des Aeldari issus de plusieurs peuples. Elle sert Ynnead, le dieu des morts, et cherche à assurer la survie des siens. Elle a éveillé Ynnead et fondé le mouvement Ynnari, qui rassemble des Aeldari aux origines variées autour d’une même prophétie.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/swcvd7jb/how-to-use-the-ynnari-and-harlequins-in-the-new-codex-aeldari/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Eldrad Ulthran
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Aeldari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/eldrad-ulthran.png" alt="Eldrad Ulthran, grand prophète Aeldari" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Eldrad Ulthran est un grand prophète du vaisseau-monde Ulthwé. Ses visions et son pouvoir psychique guident les Aeldari à travers les dangers de la galaxie. Ses visions l’amènent à intervenir dans les affaires d’autres peuples lorsque cela peut détourner une catastrophe annoncée pour les Aeldari.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/9fkzbnbc/reinforce-your-shelves-classic-emperors-children-aeldari-and-space-wolves-are-going-made-to-order/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Prince Yriel
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Aeldari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/yriel.jpg" alt="Prince Yriel, corsaire Aeldari" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Seigneur des corsaires Eldritch Raiders, Yriel défend le vaisseau-monde Iyanden et combat avec la Lance du Crépuscule. Après son exil, il est revenu défendre Iyanden et mène aussi les corsaires qui sillonnent les routes spatiales à la recherche de gloire et de richesses.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://agtom.eu/aeldari/397061-aeldari-prince-yriel-5011921251681.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Jain Zar
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Aeldari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/jain-zar.jpg" alt="Jain Zar, la Tempête silencieuse" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Jain Zar est une Phoenix Lord et la fondatrice des Banshees hurlantes. Cette guerrière légendaire mène les Aeldari au combat avec une vitesse redoutable. Comme les autres Seigneurs Phoenix, elle peut renaître lorsqu’un nouvel Exarque revêt son armure, perpétuant ainsi son héritage guerrier.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://ihrova-maysternya.com/aeldari-jain-zar/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">◉</span>Drukhari
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Lelith Hesperax
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Drukhari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/lelith.jpg" alt="Lelith Hesperax, combattante des arènes Drukhari" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Lelith Hesperax est une combattante célèbre des arènes de Commorragh. Sa vitesse et sa maîtrise des lames en font l’une des guerrières les plus redoutées des Drukhari. Elle est célèbre pour ses duels sans armure et ses victoires dans les arènes, où elle domine ses adversaires par la vitesse et la précision.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/PBiUSlx8/warhammer-40000-faction-focus-drukhari/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Drazhar
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Drukhari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/drazhar.jpg" alt="Drazhar, maître des Incubes" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Maître des Incubes, Drazhar est un guerrier d’élite qui manie ses lames avec une précision meurtrière. Son identité demeure entourée de mystère. Il mène les Incubes au combat et laisse derrière lui une réputation de duelliste implacable, tandis que son passé reste volontairement obscur.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.totalwargame.com/fr/drukhari/24530-Drazhar.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Urien Rakarth
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Drukhari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/urien.png" alt="Urien Rakarth, tourmenteur Drukhari" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Urien Rakarth est le plus célèbre des Tourmenteurs de Commorragh. Il dirige les expériences des Cérastes de la Haemonculi et transforme ses victimes en créations monstrueuses. Ses ateliers et ses expériences contribuent au pouvoir des Haemonculi, qui promettent aux Drukhari de survivre à des blessures extrêmes.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://golden-throne.com/2023/10/29/urien-rakarth/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Asdrubael Vect
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Drukhari
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/vect.jpg" alt="Portrait d’Asdrubael Vect" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Seigneur suprême de Commorragh, Vect gouverne les Drukhari par la peur, les complots et les démonstrations de pouvoir. Il a bâti son autorité au sein du Kabal du Cœur Noir. Il contrôle Commorragh par des alliances temporaires, des trahisons calculées et la peur de représailles immédiates.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://x.com/RuoYuArt/status/1022893927194488832">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">◎</span>Empire Tau et Enclaves Farsight
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Commandante Shadowsun
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Empire Tau
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/shadowsun.jpg" alt="La commandante Shadowsun dans son armure de combat T’au" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        O’Shaserra, appelée Shadowsun, est une commandante T’au et une stratège patiente. Elle dirige des campagnes militaires et défend l’expansion de son empire au nom du Bien Suprême. Elle privilégie l’observation, la mobilité et les frappes précises, conformément à la doctrine Kauyon qu’elle maîtrise particulièrement.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/XpDdTkST/chalnath-dispatches-blade-in-the-dark/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Commandant Farsight
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Enclaves Farsight
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/commander-farsight.jpg" alt="Le commandant Farsight dans son exo-armure rouge" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Farsight est le chef des Enclaves Farsight, un groupe dissident de l’Empire T’au. Il mène ses troupes au combat à bord de son exo-armure rouge. Après s’être éloigné du pouvoir central T’au, il a fondé les Enclaves Farsight et conduit ses propres forces dans les zones de guerre.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/mrOLyyXM/sunday-preview-commander-farsight-takes-his-shot-at-the-arks-of-omen/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Darkstrider
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Empire Tau
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/darkstrider.jpg" alt="Darkstrider, éclaireur T’au" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Sub-commandant de l’Empire T’au, Darkstrider est un spécialiste de la reconnaissance et des tactiques d’infiltration. Il entraîne les équipes de cibleurs. Il accompagne les équipes de reconnaissance et utilise son analyse du terrain pour révéler les faiblesses des défenses ennemies.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://clic29-hobby.fr/t-au-empire/3314-darkstrider-t-au-empire.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Longstrike
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Empire Tau
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/longstrike.png" alt="Longstrike, as des chars de l’Empire T’au" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Longstrike est un célèbre commandant de char de la caste du Feu. Son expérience du Hammerhead en fait l’un des tireurs les plus redoutés de l’Empire T’au. Il est associé aux équipages de Hammerhead et pousse les tactiques blindées T’au à leur plus haut niveau d’efficacité.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://fr.bdcosmos.com/Produits/empire-tau-longstrike">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">❖</span>Tyranides
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Le Swarmlord
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Tyranides
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/swarmlord.jpg" alt="Figurine du Swarmlord tyranide, armée de ses quatre sabres d’os" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Le Swarmlord est un organisme de commandement que l’Esprit-ruche crée pour affronter des ennemis particulièrement dangereux. Il combine une grande puissance de combat à une intelligence tactique exceptionnelle. Chaque incarnation conserve l’expérience des batailles précédentes, permettant à l’Esprit-ruche d’adapter ses stratégies à ses ennemis.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://wh40k.lexicanum.com/wiki/Swarmlord">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Deathleaper
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Tyranides
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/deathleaper.jpg" alt="Deathleaper, bioforme tyranide furtive" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Bioforme furtive de type Lictor, le Deathleaper traque les commandants ennemis et sème la panique avant l’arrivée de la flotte-ruche. Il cible les officiers et les figures de commandement, afin que la peur et la confusion désorganisent les défenseurs avant l’assaut tyranide.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.beastsofwar.com/warhammer-40k/new-tyranid-deathleaper-sculpt-warhammer-40000/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Old One Eye
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Tyranides
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/old-one-eye.png" alt="Old One Eye, carnifex tyranide" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Old One Eye est un Carnifex légendaire, célèbre pour sa résistance et sa capacité à revenir après des blessures qui auraient détruit toute autre créature. Les récits de ses retours après des blessures mortelles lui ont donné une réputation presque mythique parmi les défenseurs impériaux.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.ebay.com/itm/135018986041">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Neurotyran
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Tyranides
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/neurotyrant.jpg" alt="Neurotyran et ses Neuroloïdes" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Créature synaptique dotée d’immenses pouvoirs psychiques, le Neurotyran coordonne les essaims et amplifie l’influence de l’Esprit-ruche. Ses Neuroloïdes servent de relais à ses pouvoirs et renforcent la coordination psychique des créatures tyranides alentour.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.totalwargame.com/en/tyranids/12215-neurotyrant.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">☣</span>Cultes Genestealers
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Le Patriarche Genestealer
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Cultes Genestealers
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/patriarch.jpg" alt="Le Patriarche Genestealer, chef d’un culte Genestealer" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Le Patriarche est à l’origine d’un culte Genestealer et domine ses adeptes par son pouvoir psychique. Sous son influence, les membres du culte préparent une révolte et l’arrivée des Tyranides. Sa présence psychique lie les adeptes au culte et entretient leur croyance en une libération qui coïncidera avec l’arrivée des Tyranides.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/f6DpT12Z/40-years-of-warhammer-bow-before-the-genestealer-cult-patriarch/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Magus du Culte
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Cultes Genestealers
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/magus.png" alt="Magus du Culte Genestealer" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Le Magus est le guide spirituel et le principal psyker d’un Culte Genestealer. Il répand la doctrine du culte et prépare le soulèvement contre les autorités impériales. Il interprète les signes du culte, recrute de nouveaux fidèles et prépare les insurrections depuis les zones habitées qu’il infiltre.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://merlinsminiatures.co.uk/products/magus-genestealer-cults-painted-warhammer-40k-games-workshop-x12625">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Kelermorph
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Cultes Genestealers
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/kelermorph.jpg" alt="Kelermorph, pistolero du Culte Genestealer" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Héros pistolero du culte, le Kelermorph apparaît lors des révoltes pour éliminer les officiers et inspirer les insurgés par ses exploits. Ses trois pistolets et ses apparitions soudaines en font un héros de propagande autant qu’un assassin très efficace.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://agtom.eu/en/genestealer-cults/366743-genestealer-cults-kelermorph-5011921171903.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Jackal Alphus
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Cultes Genestealers
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/jackal-alphus.jpg" alt="Jackal Alphus sur sa moto de reconnaissance" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Éclaireuse et tireuse d’élite du culte, la Jackal Alphus ouvre la voie aux colonnes insurgées et désigne les cibles prioritaires aux combattants. À moto, elle repère les positions ennemies et transmet des indications de tir aux membres de son culte.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://gamersparadisela.com/products/warhammer-40k-genestealer-cults-jackal-alphus">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class='text-2xl font-black text-amber-300'>
+                            <span class="mr-2 text-amber-300" aria-hidden="true">⌖</span>Ligues de Votann
+                        </h3>
+                        <div class='mt-5 grid grid-cols-1 gap-6 md:grid-cols-2'>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Ûthar le Destiné
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Ligues de Votann
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/uthar.jpg" alt="Ûthar le Destiné, héros des Ligues de Votann" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Ûthar le Destiné est un héros de la Ligue Thurienne et un chef des Kin. Son jugement au combat et sa lame ancestrale aident les Ligues de Votann à remporter leurs batailles. Kahl de la Ligue Thurienne, il porte la lame ancestrale Forgebreaker et transforme les Jugements des Ancêtres en avantage au combat.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.warhammer-community.com/en-gb/articles/tnEVvJ67/nova-open-reveal-the-leagues-of-votann-unveiled/">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Grimnyr
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Ligues de Votann
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/grimnyr.jpg" alt="Grimnyr accompagné de ses drones CORV" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Les Grimnyrs sont des psykers Kin qui puisent dans les technologies ancestrales des Ligues et guident leurs communautés au combat. Ils sont accompagnés de drones CORV et consultent les Ancêtres pour guider les Kin dans leurs décisions et leurs batailles.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.philibertnet.com/en/leagues-of-votann/115386-w40k-leagues-of-votann-grimnyr-5011921172375.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Champion Einhyr
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Ligues de Votann
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/einhyr-champion.jpg" alt="Champion Einhyr en exo-armure" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Les Champions Einhyr sont des guerriers Kin d’élite en exo-armure, choisis pour mener les troupes dans les affrontements les plus dangereux. Leur exo-armure leur permet de tenir les positions les plus dangereuses et de briser les lignes ennemies au corps à corps.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://agtom.eu/leagues-of-votann/379201-leagues-of-votann-einhyr-champion-5011921180981.html">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="overflow-hidden rounded-xl border border-white/10 bg-slate-900">
+                                <h4 class="p-5 text-2xl font-bold">
+                                    Brôkhyr Iron-master
+                                </h4>
+                                <p class="mx-5 mb-4 w-fit rounded border border-amber-400/40 bg-slate-800 px-3 py-1 text-sm font-semibold text-amber-300">
+                                    Faction : Xenos - Ligues de Votann
+                                </p>
+                                <img class="h-72 w-full bg-slate-800 object-contain p-3" src="../imag/iron-master.jpg" alt="Brôkhyr Iron-master et ses outils" loading="lazy">
+                                <div class="p-5">
+                                    <p class="leading-7 text-stone-300">
+                                        Ingénieur Brôkhyr, l’Iron-master entretient et améliore les machines de guerre des Ligues de Votann sur le champ de bataille. Il travaille avec des assistants et des machines spécialisées pour maintenir l’équipement des Kin en état pendant les longues campagnes.
+                                    </p>
+                                    <a class="mt-3 inline-block text-sm text-amber-300 underline hover:text-amber-200" href="https://www.ebay.com/itm/387794115057">
+                                        Source de l’image
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
                 </div>
             </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Chaos</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Faction</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                <div class="bg-blue-500 p-6 rounded rounded-3xl">
-                    <h2 class="text-[50px]">Factions</h2>
-                    <p class="text-[20px]">
-                        description
-                    </p>
-                </div>
-            </section>
-            
-            <section class="mt-14 md:mt-20">
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-                <article class="bg-blue-200 flex flex-row mb-10">
-                    
-                    <div class="w-160 p-20 text-black">
-                       <h2 class="text-[50px]">Nom</h2>
-                        <p class="text-[20px]">
-                            description
-                        </p>
-                        <div class="flex flex-row gap-5 mt-40 ml-67">           
-                            <div class="bg-blue-500 p-5">
-                                <h2 class="text-[50px]">Faction</h2>
-                                <p class="text-[20px]">
-                                    description
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="p-5" src="../imag/Emperor_golden_throne.jpg" alt="">
-                </article>
-                
-            </section>
-            
-            
-            
         </main>
-        
         <footer class="border-t border-white/10 bg-slate-950 px-5 py-8 text-center text-sm text-stone-400">
-            <p>&copy;Warhammer 40,000, &copy;GAMES WORKSHOP. Créé par Manimékhala Nachampassak et Tristan Pagé</p>
+            <p>
+                &copy;Warhammer 40,000, &copy;GAMES WORKSHOP. Créé par Manimékhala Nachampassak et Tristan Pagé
+            </p>
         </footer>
-        
-        <a class="fixed bottom-5 right-5 rounded-full border border-amber-300 bg-slate-900 px-4 py-3 text-sm font-bold text-amber-300 shadow-xl transition hover:bg-amber-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-amber-200" href="#top">↑ <span class="hidden sm:inline">Haut de page</span></a>
+        <a class="fixed bottom-5 right-5 rounded-full border border-amber-300 bg-slate-900 px-4 py-3 text-sm font-bold text-amber-300 shadow-xl transition hover:bg-amber-400 hover:text-slate-950 focus:outline-none focus:ring-2 focus:ring-amber-200" href="#top">
+            ↑
+            <span class="hidden sm:inline">
+                Haut de page
+            </span>
+        </a>
     </body>
 </html>
 
